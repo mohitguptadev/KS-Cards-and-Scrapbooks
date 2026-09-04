@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | KS Cards & Scrapbooks</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.jpg" alt="KS Cards & Scrapbooks">
+        </a>
+
+        <div class="admin-nav">
+            <span>Admin Panel</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard -->
+    <section class="admin-dashboard">
+<div class="admin-stats">
+
+    <div class="admin-stat-card">
+        <span>Total Products</span>
+        <strong id="totalProducts">0</strong>
+    </div>
+
+    <div class="admin-stat-card">
+        <span>Available</span>
+        <strong id="availableProducts">0</strong>
+    </div>
+
+    <div class="admin-stat-card">
+        <span>Coming Soon</span>
+        <strong id="comingSoonProducts">0</strong>
+    </div>
+
+</div>
+        <div class="admin-dashboard-header">
+            <div>
+                <span>MANAGEMENT</span>
+                <h1>Product Dashboard</h1>
+                <p>Manage your KS Cards & Scrapbooks products.</p>
+            </div>
+
+            <button class="add-product-btn" id="showAddProduct">
+                + Add Product
+            </button>
+        </div>
+
+
+        <!-- Add Product Form -->
+        <div class="admin-form-card" id="productFormCard">
+
+            <h2 id="formTitle">Add New Product</h2>
+
+            <form id="productForm">
+
+                <input type="hidden" id="editProductId">
+
+                <div class="admin-form-grid">
+
+                    <div>
+                        <label>Product Name</label>
+                        <input
+                            type="text"
+                            id="productName"
+                            placeholder="e.g. Name Keychain"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Category</label>
+                        <input
+                            type="text"
+                            id="productCategory"
+                            placeholder="e.g. Resin Art"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Subcategory</label>
+                        <input
+                            type="text"
+                            id="productSubcategory"
+                            placeholder="e.g. Keychains"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Image Path</label>
+                        <input
+                            type="text"
+                            id="productImage"
+                            placeholder="images/resin-keychains/name.jpg"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Product Page</label>
+                        <input
+                            type="text"
+                            id="productPage"
+                            placeholder="pages/resin/keychains.html"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Availability</label>
+
+                        <select id="productAvailable">
+                            <option value="true">Available</option>
+                            <option value="false">Coming Soon</option>
+                        </select>
+                    </div>
+<div>
+    <label>Price</label>
+    <input
+        type="number"
+        id="productPrice"
+        placeholder="e.g. 499"
+        min="0"
+    >
+</div>
+                </div>
+
+                <div>
+                    <label>Description</label>
+
+                    <textarea
+                        id="productDescription"
+                        placeholder="Write product description..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="admin-form-buttons">
+
+                    <button type="submit" class="save-product-btn">
+                        Save Product
+                    </button>
+
+                    <button
+                        type="button"
+                        class="cancel-product-btn"
+                        id="cancelProduct">
+                        Cancel
+                    </button>
+
+                </div>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- Products -->
+        <div class="admin-products-section">
+
+            <div class="admin-section-heading">
+                <h2>All Products</h2>
+                <span id="productCount">0 Products</span>
+            </div>
+
+            <div class="admin-product-list" id="adminProductList">
+
+                <p>Loading products...</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script type="module" src="../js/admin-dashboard.js"></script>
+
+</body>
+</html>

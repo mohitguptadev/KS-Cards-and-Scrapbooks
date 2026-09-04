@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | KS Cards & Scrapbooks</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<section class="admin-login">
+
+    <div class="admin-login-box">
+
+        <div class="admin-login-logo">
+            <img src="../images/logo.jpg" alt="KS Cards & Scrapbooks">
+        </div>
+
+        <span class="admin-label">PRIVATE ACCESS</span>
+
+        <h1>Admin Login</h1>
+
+        <p class="admin-subtitle">
+            Manage your products and collections
+            from your dashboard.
+        </p>
+
+        <form id="loginForm">
+
+            <div class="admin-input-group">
+                <label for="adminEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="admin-input-group">
+                <label for="adminPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="admin-login-btn">
+                Login to Dashboard
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </form>
+
+        <a href="../index.html" class="admin-back-home">
+            ← Back to Website
+        </a>
+
+    </div>
+
+</section>
+
+    <script type="module" src="../js/admin-login.js"></script>
+
+</body>
+</html>
