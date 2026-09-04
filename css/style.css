@@ -2430,3 +2430,101 @@ img {
     }
 
 }
+/* =========================
+   ABOUT SECTION - MOBILE FIX
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .about {
+        min-height: auto;
+        padding: 70px 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        overflow: hidden;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .about-content .small-heading {
+        margin-bottom: 14px;
+    }
+
+    .about-content h2 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin-bottom: 25px;
+    }
+
+    .about-content > p:not(.small-heading) {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .about-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    .about-decoration {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .about-circle {
+        width: 260px;
+        height: 260px;
+        position: relative;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONE
+   ========================= */
+
+@media (max-width: 500px) {
+
+    .about {
+        padding: 60px 6% 70px;
+        gap: 35px;
+    }
+
+    .about-content .small-heading {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .about-content > p:not(.small-heading) {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-decoration {
+        height: 250px;
+    }
+
+    .about-circle {
+        width: 230px;
+        height: 230px;
+    }
+
+}
