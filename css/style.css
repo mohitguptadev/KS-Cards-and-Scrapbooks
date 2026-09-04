@@ -2279,3 +2279,154 @@ img {
         grid-column: auto;
     }
 }
+/* =========================
+   HOMEPAGE MOBILE OPTIMIZATION
+   ========================= */
+
+@media (max-width: 800px) {
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 55px 7% 65px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .small-heading {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 11vw, 52px);
+        line-height: 1.12;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        max-width: 500px;
+        margin: 0 auto 28px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-button {
+        padding: 13px 23px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .hero-placeholder {
+        width: min(300px, 78vw);
+        height: min(300px, 78vw);
+    }
+
+    .hero-placeholder span {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .hero-placeholder strong {
+        font-size: 32px;
+    }
+
+
+    /* COLLECTIONS */
+
+    .collections {
+        padding: 65px 7%;
+    }
+
+    .collections .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .collections .section-heading h2 {
+        font-size: 40px;
+    }
+
+    .collections .section-heading > p:last-child {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .collection-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .collection-card {
+        min-height: 300px;
+        padding: 28px 24px;
+    }
+
+    .collection-content h3 {
+        font-size: 26px;
+    }
+
+    .collection-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONE
+   ========================= */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 45px 6% 55px;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-visual {
+        min-height: 270px;
+    }
+
+    .hero-placeholder {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-placeholder strong {
+        font-size: 29px;
+    }
+
+    .collections {
+        padding: 55px 6%;
+    }
+
+    .collections .section-heading h2 {
+        font-size: 36px;
+    }
+
+    .collection-card {
+        min-height: 290px;
+    }
+
+}
